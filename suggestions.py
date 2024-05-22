@@ -23,20 +23,20 @@ class Suggestion:
         if self.dis_name not in ["Normal", "None"]:
             header = f"The following CT-Scan Image has been identified as {self.dis_name}\n\n"
 
-            symptoms_section = "Symptoms:\n"
+            symptoms_section = "**Symptoms:**\n"
             symptoms_list = "".join([f"\n\n • {symptom}\n" for symptom in self.disease_info["symptoms"]])
 
-            medication_section = "\nSuggested Medication:\n"
+            medication_section = "\n**Suggested Medication:**\n"
             medication_list = "".join([f"\n\n • {medication}\n" for medication in self.disease_info["medications"]])
 
-            precautions_section = "\nPrecautions:\n"
+            precautions_section = "\n**Precautions:**\n"
             precautions_list = "".join([f"\n\n • {precaution}\n" for precaution in self.disease_info["precautions"]])
 
             suggestion = (
-                header +
-                symptoms_section + symptoms_list +
-                medication_section + medication_list +
-                precautions_section + precautions_list
+                header + 
+                '`' + symptoms_section + symptoms_list + '`' +
+                '`' + medication_section + medication_list + '`' +
+                '`' + precautions_section + precautions_list + '`'
             )
         elif self.dis_name == "Normal":
             suggestion = f"The following CT-Scan Image seems to be {self.dis_name}"

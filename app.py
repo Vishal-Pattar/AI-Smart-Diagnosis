@@ -13,7 +13,7 @@ def main():
     st.title("AI Smart Diagnosis - A Smart Step in Self Diagnosis")
     
     st.subheader("Select the Disease you want to diagnose")
-    disease = st.selectbox("Select", ["Brain Tumor", "Tuberculosis", "Kidney Disease", "Lungs Disease"])
+    disease = st.selectbox("Select", ["Kidney Disease", "Brain Tumor", "Lungs Disease", "Tuberculosis"])
 
     st.subheader("Upload your data")
     uploaded_file = st.file_uploader("Choose file", type=['jpg', 'png', 'jpeg'])
