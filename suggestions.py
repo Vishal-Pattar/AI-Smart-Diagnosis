@@ -24,19 +24,19 @@ class Suggestion:
             header = f"The following CT-Scan Image has been identified as {self.dis_name}\n\n"
 
             symptoms_section = "**Symptoms:**\n"
-            symptoms_list = "".join([f"\n\n • {symptom}\n" for symptom in self.disease_info["symptoms"]])
+            symptoms_list = "".join([f"\t\n\n • \t\t {symptom}\n" for symptom in self.disease_info["symptoms"]])
 
             medication_section = "\n**Suggested Medication:**\n"
-            medication_list = "".join([f"\n\n • {medication}\n" for medication in self.disease_info["medications"]])
+            medication_list = "".join([f"\t\n\n • \t\t {medication}\n" for medication in self.disease_info["medications"]])
 
             precautions_section = "\n**Precautions:**\n"
-            precautions_list = "".join([f"\n\n • {precaution}\n" for precaution in self.disease_info["precautions"]])
+            precautions_list = "".join([f"\t\n\n • \t\t {precaution}\n" for precaution in self.disease_info["precautions"]])
 
             suggestion = (
                 header + 
-                '`' + symptoms_section + symptoms_list + '`' +
-                '`' + medication_section + medication_list + '`' +
-                '`' + precautions_section + precautions_list + '`'
+                symptoms_section + symptoms_list +
+                medication_section + medication_list +
+                precautions_section + precautions_list
             )
         elif self.dis_name == "Normal":
             suggestion = f"The following CT-Scan Image seems to be {self.dis_name}"
