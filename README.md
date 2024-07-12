@@ -1,4 +1,9 @@
 ﻿# AI Smart Diagnosis
+![](https://badges.creative-minds.studio/Vishal-Pattar/AI-Smart-Diagnosis/views?color=grey)
+![](https://badges.creative-minds.studio/Vishal-Pattar/AI-Smart-Diagnosis/clones?color=grey)
+![](https://badges.creative-minds.studio/Vishal-Pattar/AI-Smart-Diagnosis/forks?color=grey)
+![](https://badges.creative-minds.studio/Vishal-Pattar/AI-Smart-Diagnosis/downloads?color=grey)
+![](https://badges.creative-minds.studio/Vishal-Pattar/AI-Smart-Diagnosis/commits?color=grey)
 
 AI Smart Diagnosis is a Streamlit web application that provides smart diagnosis for various diseases based on CT scan images. It offers features for login authentication and analysis of medical images for diseases like brain tumor, tuberculosis, kidney disease, and lung disease.
 
